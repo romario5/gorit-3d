@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Open Sans", sans-serif;
+                font-weight: 300;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="lib/ui-builder.min.js"></script>
+
+        <script src="ui/Layout.js"></script>
+        <script src="ui/controls/input.js"></script>
+
+        <script src="ui/components/layers-list.js"></script>
+        <script src="ui/components/layer.js"></script>
+        <script src="ui/components/object.js"></script>
+        <script src="ui/components/position.js"></script>
+        <script src="ui/components/rotation.js"></script>
+
+        <script src="../dst/nat-3d.min.js"></script>
+        <script>
+
+        let Engine = NAT;
+        let app = new Engine.App();
+        let layout = UI('Layout').render({
+            app: app
+        });
+        </script>
+    </body>
+</html>
